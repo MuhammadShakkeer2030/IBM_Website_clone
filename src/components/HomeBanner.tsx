@@ -1,6 +1,5 @@
-type Props = {};
 import BannerImage from "../assets/imgs/home banner.png";
-const HomeBanner = (props: Props) => {
+const HomeBanner = () => {
   return (
     <div className="flex items-center">
       {/* texts */}

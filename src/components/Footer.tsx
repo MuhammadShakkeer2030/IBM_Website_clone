@@ -5,11 +5,9 @@ import {
   aboutIBM,
   connectWithUs,
   discover,
-  learnAbout,
 } from "../assets/utlity";
-type Props = {};
 
-const Footer = (props: Props) => {
+const Footer = () => {
   const [showRegion, setShowRegion] = useState(false);
   return (
     <div>

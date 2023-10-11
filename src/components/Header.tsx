@@ -1,9 +1,8 @@
 import { headerNavLinks } from "../assets/utlity";
 import { BsArrowRight } from "react-icons/bs";
 
-type Props = {};
 
-const Header = (props: Props) => {
+const Header = () => {
   return (
     <div>
       <ul className="relative">
@@ -13,11 +12,11 @@ const Header = (props: Props) => {
           </li>
         ))}
         <ul className="absolute">
-          {headerNavLinks?.map((item) => (
+          {/* {headerNavLinks?.map((item) => (
               {item.subCategories.map((subLink) => (
                 <li>{subLink.name}</li>
               ))}
-          ))}
+          ))} */}
         </ul>
       </ul>
     </div>

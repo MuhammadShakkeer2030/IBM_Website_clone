@@ -1,7 +1,6 @@
 
-type Props = {};
 
- const IbmCard = (props: Props) => {
+ const IbmCard = () => {
   return (
     <div>IbmCard</div>
   );
