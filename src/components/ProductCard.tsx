@@ -1,9 +1,20 @@
+import { FC } from 'react'
+import { cardItems1Props, } from '../assets/types';
 
+interface ProductCardProps {
+  item: cardItems1Props
+  width: string
+  height?: string
+}
 
- const ProductCard = () => {
+const ProductCard: FC<ProductCardProps> = ({ item, width, height }) => {
   return (
-    <div className="bg-gray-500 h-[300px] w-[500px]">ProductCard</div>
+    <div key={item?.id} className={`bg-gray-500  w-[${width}] ${height && `h-[${height}]`} `}>
+      <p>{item?.title}</p>
+      {item?.image && <img src={item?.image} alt="card_img" />}
+      <p>{item?.desc}</p>
+    </div>
   );
 };
 
-export { ProductCard}
+export { ProductCard }
