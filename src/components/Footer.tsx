@@ -6,7 +6,7 @@ export const Footer = () => {
   const [showRegion, setShowRegion] = useState(false);
 
   return (
-    <footer className="bg-ibmBlue text-white py-12">
+    <footer className="bg-ibmGray text-white py-12">
       <div className="container mx-auto px-4">
         {/* Logo & Language */}
         <div className="flex items-center justify-between mb-8">

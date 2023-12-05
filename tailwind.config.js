@@ -22,7 +22,8 @@ export default {
         'h1':"53px",
         'h3':"40px",
         'p' : "20px",
-        'btn':"20px"
+        'btn':"20px",
+        "icon":"40px"
       },
       fontWeight:{
         "300":"300",
@@ -33,6 +34,7 @@ export default {
         "mp":"10px",//mubile padding
         "tp":"15px",//tablet padding
         "lp":"20px",//laptop padding"
+        "boxP":"20px"
       },
       margin: {
         '1': '0.25rem',   // 4px
@@ -53,6 +55,12 @@ export default {
         'lg': '0.5rem',    // 8px
         'xl': '1rem',      // 16px
         'full': '9999px',
+      },
+      width:{
+        "boxWidth":"352px"
+      },
+      height:{
+        "boxHeight":"298px"
       },
     },
   },
