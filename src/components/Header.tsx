@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Logo, } from "../assets/textData/utlity";
-import { BsChevronDown,  BsProjectorFill, BsSearch } from "react-icons/bs";
+import { BsChevronDown, BsProjectorFill, BsSearch } from "react-icons/bs";
 import { productNavLinks } from '../assets/textData/ProductNavLInk';
 import { solutionsNavLinks } from '../assets/textData/solutionsNavLinks';
 import { consultingNavLinks } from '../assets/textData/consultingNavLink';
@@ -27,6 +27,7 @@ const Header = () => {
   return (
     <header className="flex justify-between items-center h-[70px] px-4 lg:px-8 text-black bg-white shadow-md relative">
 
+      <button onClick={toggleMenu} className='block md:hidden' ><AiOutlineMenu /></button>
       {
         showSubmenu && <ul className="flex flex-col p-mp text-start absolute  h-[350px] z-50 inset-0 top-10 left-0 bg-ibmText md:hidden">
           {headerNavLinks?.map((item, index) => <Link to={''}>
@@ -42,7 +43,7 @@ const Header = () => {
         {/* Mubile version */}
         {/* <div className='relative'> */}
 
-        <button onClick={toggleMenu} className='block md:hidden' ><AiOutlineMenu /></button>
+
 
         {/* </div> */}
 
