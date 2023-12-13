@@ -74,18 +74,23 @@ export const AboutIBM = () => {
                     </div>
                 </div>
                 {/* cards mapping */}
-                <div className="flex flex-col md:flex-row gap-4 md:gap-0">
+                <div className="flex flex-wrap flex-col md:flex-row lg:gap-0">
                     {Array.from({ length: 4 })?.map((_card, index) => <div
-                        key={index} className="w-full md:1/4 text-start ">
-                        <img src={mubileHomeWomen} alt="image" />
-                        <div className="p-3 py-2">
+                        key={index} className="w-full md:w-1/2 lg:w-1/4 text-start">
+                        <img src={mubileHomeWomen} alt="image" className="w-full md:w-[300px]" />
+                        <div className="p-3 py-2 w-full md:w-[300px]">
                             <h3 className="text-ibmGray">title</h3>
-                            <p className="text-tiny mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur excepturi rerum provident quae. Enim provident est animi assumenda molestiae.</p>
-                            <button className="text-tiny text-ibmBlue ">Join Our team       </button>
+                            <p className="text-tiny mb-5 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur excepturi rerum provident quae. Enim provident est animi assumenda molestiae.</p>
+                            <button className="text-tiny text-ibmBlue ">Join Our team</button>
                         </div>
                     </div>
                     )}
                 </div>
+
+                
+               
+
+
             </div>
 
         </div>
