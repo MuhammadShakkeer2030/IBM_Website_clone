@@ -112,10 +112,10 @@ const aboutIBM = [
   { name: "Corporate responsibility" },
 ];
 
-import card1 from "../imgs/card1/card1.png";
-import card2 from "../imgs/card1/card2.jpeg";
-import card3 from "../imgs/card1/card3.jpeg";
-import card4 from "../imgs/card1/card4.png";
+import card1 from "/imgs/card1/card1.png";
+import card2 from "/imgs/card1/card2.jpeg";
+import card3 from "/imgs/card1/card3.jpeg";
+import card4 from "/imgs/card1/card4.png";
 // -----------------------------------
 
 import { cardItems1Props, cardItems2Props, headerNavLinksProps } from "../types";

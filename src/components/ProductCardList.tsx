@@ -21,9 +21,9 @@ export const ProductCardList: FC<CardListProps> = () => {
     <div className="flex flex-wrap justify-start  gap-8">
       <div className="flex flex-col ">
         <h3 className="text-start">Recommended for you</h3>
-        <div className="flex gap-2 flex-col md:flex-row overflow-hidden">
+        <div className="flex gap-2 flex-wrap justify-center md:justify-start lg:justify-start overflow-hidden">
           {cardItems1?.map((item) => (
-            <ProductCard key={item.id} item={item} width="300px" mobWdith={'100%'} tabWidth={'380px'} pcWidth="320px" />
+            <ProductCard key={item.id} item={item} width={""} />
           ))}
         </div>
       </div>

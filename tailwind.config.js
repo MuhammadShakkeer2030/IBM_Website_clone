@@ -23,7 +23,8 @@ export default {
         'h3':"40px",
         'p' : "20px",
         'btn':"20px",
-        "icon":"40px"
+        "icon":"40px",
+        "tiny":"7.5px"
       },
       fontWeight:{
         "300":"300",

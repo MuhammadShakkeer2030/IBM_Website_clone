@@ -17,7 +17,7 @@ export const TechCard: FC<ProductCardProps> = ({ item }) => {
 
 
         <div className="w-full group h-[319px] md:h-[200px] lg:h-[218px] md:w-boxWidth bg-ibmLightGray hover:bg-ibmLightGray/80  relative transition-all  ease-in-out p-boxP border border-gary-500 flex-shrink-0">
-            <BsImage className="text-[20px] lg:text-icon" />
+            <BsImage className="text-[40px] md:text-[20px] lg:text-icon" />
 
             <h4 className={`${flexJI} transform  absolute inset-0  group-hover:translate-y-2 group-hover:opacity-0 `}>{item?.title}</h4>
 
