@@ -44,7 +44,7 @@ export const AboutIBM = () => {
                 <img src={mubileHomeWomen} alt="women image" className="md:hidden object-contain opacity-50" />
             </div>
 
-          {/* global consultant  */}
+            {/* global consultant  */}
             <div className="flex flex-col  font-ibmPlex text-start p-4">
                 <div className="flex flex-col md:flex-row my-4 md:my-8">
                     <h2 className="text-h3 font-300 leading-[40px] mb-5 md:w-1/2">Meet our global consultants
@@ -75,7 +75,8 @@ export const AboutIBM = () => {
                 </div>
                 {/* cards mapping */}
                 <div className="flex flex-col md:flex-row gap-4 md:gap-0">
-                    {Array.from({ length: 4 })?.map((_card) => <div className="w-full md:1/4 text-start ">
+                    {Array.from({ length: 4 })?.map((_card, index) => <div
+                        key={index} className="w-full md:1/4 text-start ">
                         <img src={mubileHomeWomen} alt="image" />
                         <div className="p-3 py-2">
                             <h3 className="text-ibmGray">title</h3>
