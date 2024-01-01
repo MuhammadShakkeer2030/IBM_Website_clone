@@ -1,16 +1,21 @@
-on: push
 name: Publish on Netlify
+
+on:
+  push:
+    branches:
+      - main
+
 jobs:
   publish:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@main
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    - name: Publish
-      uses: netlify/actions/cli@main
-      with:
-        args: deploy --dir=site --functions=functions
-      # env:
-      #   NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-      #   NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+      - name: Publish
+        uses: netlify/actions/cli@v1.2.0  # Use a specific version or tag
+        with:
+          args: deploy --prod --dir=build
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}  # Replace with your Netlify auth token

@@ -19,12 +19,14 @@ interface CardListProps {
 export const ProductCardList: FC<CardListProps> = () => {
   return (
     <div className="flex flex-wrap justify-start  gap-8">
-      <div className="flex flex-col ">
+      <div className="flex flex-col px-[20px] py-[10p]">
         <h3 className="text-start">Recommended for you</h3>
-        <div className="flex gap-2 flex-wrap justify-center md:justify-start lg:justify-start overflow-hidden">
-          {cardItems1?.map((item) => (
-            <ProductCard key={item.id} item={item} width={""} />
-          ))}
+        <div>
+          <div className="flex flex-col sm:flex-row  flex-wrap justify-center  overflow-hidden">
+            {cardItems1?.map((item) => (
+              <ProductCard key={item.id} item={item} width={""} />
+            ))}
+          </div>
         </div>
       </div>
 

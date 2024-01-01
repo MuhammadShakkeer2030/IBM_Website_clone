@@ -4,10 +4,10 @@
 
 #root{
     padding:0;
-    margin:0;
+    margin:auto;
     box-sizing: border-box;
 }
 body{
-    background-color:gray;
+    background-color:black;
     color:white;
 }

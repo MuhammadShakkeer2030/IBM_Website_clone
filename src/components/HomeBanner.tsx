@@ -11,11 +11,11 @@ export const HomeBanner = () => {
         <p className="text-lg text-start lg:text-center lg:text-xl text-ibmGray mb-6">
           IBM’s next-generation AI and data platform is now available for free trial
         </p>
-        <div className="space-x-4">
-          <button className="border-2 border-blue-700 w-full md:w-[300px] bg-[#0f62fe] px-4 py-2 md:px-6 md:py-4 text-white hover:bg-blue-700 transition duration-300 ease-in-out">
+        <div className="">
+          <button className="border-2 border-blue-700 w-full  bg-[#0f62fe] px-4 py-2 md:px-6 md:py-4 text-white hover:bg-blue-700 transition duration-300 ease-in-out">
             Read latest IBV research
           </button>
-          <button className="border-2 border-ibmBlue w-full md:w-[300px] px-4 py-2 md:px-8 md:py-4 hover:bg-ibmBlue hover:text-white transition duration-300 ease-in-out">
+          <button className="border-2 border-ibmBlue w-full  px-4 py-2 md:px-6 md:py-4 hover:bg-ibmBlue hover:text-white transition duration-300 ease-in-out">
             Explore QRadar Suite
           </button>
         </div>
