@@ -1,15 +1,17 @@
 import { useState } from "react"
+import {MdClose, MdMarkUnreadChatAlt } from 'react-icons/md' 
 
 export const ChatBot = () => {
   const [activeChat, setActiveChat] = useState(false)
   return (
 
     <div>
-      <button onClick={() => setActiveChat(true)} className="fixed bottom-4 right-4">Chat</button>
+      <button onClick={() => setActiveChat(true)} className="fixed bottom-4 right-4 xl:text-5xl text-green-500"><MdMarkUnreadChatAlt />
+</button>
       {activeChat &&
         <div className="fixed right-5 bottom-5 bg-slate-800 xl:w-[30%] mx-auto">
 
-          <button onClick={() => setActiveChat(false)}>X</button>
+          <button className="absolute right-2 top-2 cursor-pointer z-50" onClick={() => setActiveChat(false)}><MdClose/></button>
           <div className="relative flex items-center p-3 border-b border-gray-300">
             <img className="object-cover w-10 h-10 rounded-full"
               src="https://cdn.pixabay.com/photo/2018/01/15/07/51/woman-3083383__340.jpg" alt="username" />
