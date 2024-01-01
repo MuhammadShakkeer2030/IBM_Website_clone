@@ -1,27 +1,59 @@
-# React + TypeScript + Vite
+![image](https://github.com/MuhammadShakkeer2030/IBM_Website_clone/assets/121001685/53f59c17-1411-47ed-b52a-8e3b86d8c1ff)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# IBM Clone Website
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+IBM clone Website is a corpare website . Here is clone of actual website
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Before getting started, ensure you have Node.js and npm installed on your machine.
 
-- Configure the top-level `parserOptions` property like this:
+```bash
+# Clone the repository
+git clone https://github.com/MuhammadShakkeer2030/IBM_Website_clone.git
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+# Navigate to the project directory
+cd IBM_Website_clone
+
+# Install dependencies
+npm install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Usage
+
+To run the development server:
+
+```bash
+npm run dev
+```
+
+To build the project:
+
+```bash
+npm run build
+```
+
+To run tests:
+
+```bash
+npm test
+```
+
+## Key Features
+
+  - Header
+  - Hero Section
+  - Resuable Card compoenents
+  - Chat Bot
+  - Footer
+
+
+
+## Technologies Used
+
+- **Frontend:**
+  - React
+  - Tailwind CSS
+  - React Router Dom
