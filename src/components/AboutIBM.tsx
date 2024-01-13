@@ -31,7 +31,7 @@ export const AboutIBM = () => {
         <div>
             {/* what's new */}
             <div className="flex flex-col md:flex-row md:h-[600px] xl:h-[900px]">
-                <div className="text-start w-full md:w-1/2  p-5 xl:p-7 font-ibmPlex md:flex flex-col items-start justify-start md:my-5">
+                <div className="text-start w-full md:w-1/2  p-5 xl:p-7 font-ibmPlex md:flex flex-col items-start justify-start md:my-5 xl:items-center xl:mt-20">
                     <span className="text-tiny  font-300 opacity-50">What's new</span>
                     <h2 className="text-[30px] xl:text-4xl md:mt-2">API is the business</h2>
                     <p className="text-[15px] mt-1 font-400 md:mt-5 xl:text-lg">Axis Bank’s Project NEO deploys IBM API Connect Suite to transform digital banking for its customers</p>
@@ -67,11 +67,11 @@ export const AboutIBM = () => {
 
             <div>
                 <div className="flex flex-col md:flex-row p-3 py-2 my-4 md:my-8">
-                    <h2 className="text-h3 font-300 leading-[40px] mb-5 md:w-1/2">Inside IBM
+                    <h2 className="text-h3 font-300 leading-[40px] mb-5 md:w-1/2 text-start">Inside IBM
                     </h2>
                     <div className="md:w-1/2 text-start">
                         <p className="text-[15px]">Solving the world’s problems through technology wouldn’t be possible without our most important invention: the IBMer. Have a look at our talented teams.</p>
-                        <button className="text-tiny opacity-80 flex items-center gap-2 md:mt-5">About IBM<BsArrowRight className="text-[20px]" /> </button>
+                        <button className="text-tiny opacity-80 flex items-center gap-2 md:mt-5 text-ibmBlue">About IBM<BsArrowRight className="text-[20px]" /> </button>
                     </div>
                 </div>
                 {/* cards mapping */}
