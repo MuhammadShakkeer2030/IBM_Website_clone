@@ -1,5 +1,5 @@
 import { BsArrowRight } from "react-icons/bs";
-import {  mubileHomeWomen, xlHomeWomen, mdConsultant, mubileConsultant, xlConsultant } from "../assets/utlity";
+import { mubileHomeWomen, xlHomeWomen, mdConsultant, mubileConsultant, xlConsultant } from "../assets/utlity";
 
 interface AboutProps {
     title: string,
@@ -31,13 +31,13 @@ export const AboutIBM = () => {
         <div>
             {/* what's new */}
             <div className="flex flex-col md:flex-row md:h-[600px] xl:h-[900px]">
-                <div className="text-start w-full md:w-1/2  p-5 font-ibmPlex md:flex flex-col items-start justify-start md:my-5">
+                <div className="text-start w-full md:w-1/2  p-5 xl:p-7 font-ibmPlex md:flex flex-col items-start justify-start md:my-5">
                     <span className="text-tiny  font-300 opacity-50">What's new</span>
-                    <h2 className="text-[30px] md:mt-2">API is the business</h2>
-                    <p className="text-[15px] mt-1 font-400 md:mt-5">Axis Bank’s Project NEO deploys IBM API Connect Suite to transform digital banking for its customers</p>
+                    <h2 className="text-[30px] xl:text-4xl md:mt-2">API is the business</h2>
+                    <p className="text-[15px] mt-1 font-400 md:mt-5 xl:text-lg">Axis Bank’s Project NEO deploys IBM API Connect Suite to transform digital banking for its customers</p>
                 </div>
                 {/* xl */}
-                <img src={xlHomeWomen} alt="women image" className="w-full md:w-1/2  object-contain opacity-50" />
+                <img src={xlHomeWomen} alt="women image" className="w-full h-[15em] md:w-1/2 md:h-auto  object-contain opacity-50" />
                 {/* md */}
                 {/* <img src={mdHomeWomen} alt="women image" className="hidden md:block xl:hidden object-contain opacity-50" /> */}
                 {/* mubile */}
@@ -48,10 +48,10 @@ export const AboutIBM = () => {
 
             <div className="flex flex-col  font-ibmPlex text-start p-4">
                 <div className="flex flex-col md:flex-row my-4 md:my-8">
-                    <h2 className="text-h3 font-300 leading-[40px] mb-5 md:w-1/2">Meet our global consultants
+                    <h2 className="text-h3 font-300 leading-[40px] mb-5 md:w-1/2 xl:text-4xl xl:leading-none">Meet our global consultants
                     </h2>
                     <div className="md:w-1/2">
-                        <p className="text-[15px]">Bringing together a diverse set of voices with new technology, we collaborate closely, ideate freely and swiftly apply breakthrough innovations that drive big impact.</p>
+                        <p className="text-[15px] xl:text-lg">Bringing together a diverse set of voices with new technology, we collaborate closely, ideate freely and swiftly apply breakthrough innovations that drive big impact.</p>
                         <button className="text-tiny opacity-80 flex items-center gap-2 md:mt-5">View IBM Consulting <BsArrowRight className="text-[20px]" /> </button>
                     </div>
                 </div>
@@ -88,8 +88,8 @@ export const AboutIBM = () => {
                     )}
                 </div>
 
-                
-               
+
+
 
 
             </div>
