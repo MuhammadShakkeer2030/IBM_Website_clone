@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="relative">
+    <div className="relative bg-[#121212]">
       <Header />
       
 

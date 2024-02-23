@@ -35,7 +35,7 @@ export const ProductCardList: FC<CardListProps> = () => {
         <p>From our flagship products for enterprise <span className="text-ibmBlue">hybrid cloud infrastructure</span> to next-generation AI, security and storage solutions, find the answer to your business challenge.</p>
       </div>
 
-      <div className="flex flex-wrap ">
+      <div className="flex flex-wrap xl:justify-center">
         {cardItems2?.map((item) => (
           <TechCard key={item.id} item={item} width="500px" height="300px" />
         ))}
