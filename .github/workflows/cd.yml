@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - feature/global_style
 
 jobs:
   publish:
@@ -14,8 +15,8 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Publish
-        uses: netlify/actions/cli@v1.0.0  # Use a specific version or tag
+        uses: nwtgck/actions-netlify@v2.0  # Use a specific version or tag
         with:
-          args: deploy --prod --dir=build
-        env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}  # Replace with your Netlify auth token
+          publish-dir: ./dist
+       # env:
+        # NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}  # Replace with your Netlify auth token
