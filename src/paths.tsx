@@ -7,7 +7,7 @@ import { NestedHoverNavLinks } from "./components/NestedHoverNavLinks";
 
 import { TechCard } from "./components/TechCard";
 import { AboutIBM } from "./components/AboutIBM";
-import { ChatBot } from './components/ChatBot'
+import ChatBot  from './components/ChatBot'
 export { Header, HomeBanner, ProductCard, SelectRegion, Footer, NestedHoverNavLinks, TechCard, AboutIBM, ChatBot }
 
 // PAGES
